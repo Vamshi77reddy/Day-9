@@ -31,5 +31,18 @@ public class UserRegestration {
             return false;
         }
     }
+        public boolean validateMobileNumber(String mobileNumber) {
+
+            System.out.print("Enter Mobile number:- ");
+            Pattern pattern3 = Pattern.compile("^[7-9][0-9]{9}$");
+            Matcher matcher3 = pattern3.matcher(mobileNumber);
+            if (matcher3.matches()) {
+                return true;
+            } else {
+                return false;
+            }
+        }
+        
+
     
 }

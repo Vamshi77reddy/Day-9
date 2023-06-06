@@ -20,40 +20,5 @@ public class UserRegestration {
         else
             return false;
     }
-    public boolean validateEmail(String eMail) {
-
-        System.out.print("Enter Email id:- ");
-        Pattern pattern2 = Pattern.compile("^[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\\.[A-Za-z]{2,}$");
-        Matcher matcher2 = pattern2.matcher(eMail);
-        if (matcher2.matches()) {
-            return true;
-        } else {
-            return false;
-        }
-    }
-    public boolean validateMobileNumber(String mobileNumber) {
-
-        System.out.print("Enter Mobile number:- ");
-        Pattern pattern3 = Pattern.compile("^[7-9][0-9]{9}$");
-        Matcher matcher3 = pattern3.matcher(mobileNumber);
-        if (matcher3.matches()) {
-            return true;
-        } else {
-            return false;
-        }
-    }
-    public boolean validatePassword(String password) {
-
-        System.out.print("Enter the Password:- ");
-
-        //(?=.*[A-Z])(?=.*[0-9])(?=.*
-        Pattern pattern4 = Pattern.compile("^(?=[a-z]*[A-Z])(?=.*[0-9]).{8,}$");
-        Matcher matcher4 = pattern4.matcher(password);
-        if (matcher4.matches())
-            return true;
-        else
-            return false;
-
-
-    }
+    
 }
